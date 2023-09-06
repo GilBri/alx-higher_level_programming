@@ -62,4 +62,50 @@ Test case 10: Check if TypeError is raised when b is None
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
+
+Test case 11: Check if add_integer(0, 0) returns 0
+>>> add_integer(0, 0)
+0
+
+Test case 12: Check if add_integer(0, 1) returns 1
+>>> add_integer(0, 1)
+1
+
+Test case 13: Check if add_integer(1, 0) returns 1
+>>> add_integer(1, 0)
+1
+
+Test case 14: Check if add_integer(0, -1) returns -1
+>>> add_integer(0, -1)
+-1
+
+Test case 15: Check if add_integer(-1, 0) returns -1
+>>> add_integer(-1, 0)
+-1
+
+Test case 16: Check if add_integer(2, -2) returns 0
+>>> add_integer(2, -2)
+0
+
+Test case 17: Check if add_integer(-2, 2) returns 0
+>>> add_integer(-2, 2)
+0
+
+Test case 18: Check if TypeError is raised when both a and b are None
+>>> add_integer(None, None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Test case 19: Check if TypeError is raised when a is a list and b is an integer
+>>> add_integer([1], 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+Test case 20: Check if TypeError is raised when a is an integer and b is a list
+>>> add_integer(1, [2])
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
 """
