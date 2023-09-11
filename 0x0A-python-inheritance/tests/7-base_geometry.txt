@@ -1,0 +1,11 @@
+Test Case 1:
+Input: ("width", "John")
+Output: TypeError: width must be an integer
+
+Test Case 2:
+Input: ("age", 0)
+Output: ValueError: age must be greater than 0
+
+Test Case 3:
+Input: ("distance", -4)
+Output: ValueError: distance must be greater than 0
